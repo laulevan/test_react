@@ -6,18 +6,51 @@ import {
 } from 'react-bootstrap';
 import "./header.css"
 class Header extends React.Component {
-    componentDidMount(){
-        // const width = window.innerWidth;
-        // document.getElementsByClassName("triangle")[0].style.borderLeftWidth = width/2 + 'px'
-        // document.getElementsByClassName("triangle")[0].style.borderRightWidth = width/2 + 'px'
-    }
+    
     render() {
         return (
             <div>
                 <Navbar collapseOnSelect expand="md" variant="light" bg="light">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Brand href="#home">Henry Chou</Navbar.Brand>
-                    <div className="info-help">123123</div>
+
+                    <i className='far fa-question-circle question'></i>
+                    <i className='far fa-bell bell'></i>
+                    <div className="fin">
+                        <table>
+                            <tr>
+                                <td><div className="rec-hide"></div></td>
+                                <td><div className="rec-hide"></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                            </tr>
+                            <tr>
+                                <td><div className="rec-hide"></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                            </tr>
+                            <tr>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                            </tr>
+                            <tr>
+                                <td ><div className="rec-hide"></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                            </tr>
+                            <tr>
+                                <td><div className="rec-hide"></div></td>
+                                <td><div className="rec-hide"></div></td>
+                                <td><div></div></td>
+                                <td><div></div></td>
+                            </tr>
+                        </table>
+                    </div>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="#features">Features</Nav.Link>
@@ -30,18 +63,8 @@ class Header extends React.Component {
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        {/* <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                </Nav.Link>
-                    </Nav> */}
                     </Navbar.Collapse>
                 </Navbar>
-                {/* <div className="shape">
-                    <div className="triangle">
-                    </div>
-                </div> */}
             </div>
         );
     }
