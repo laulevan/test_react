@@ -1,0 +1,51 @@
+.navbar{
+    justify-content: unset;
+    background: white;
+    width: 100%;
+    position: relative;
+}
+.navbar::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    right: 0;
+    padding-bottom: 30px;
+    background: white;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.bg-light {
+    background-color: white!important;
+}
+.info-help{
+    position: absolute;
+    right: 5%;
+    top: 18px;
+}
+.shape {
+    background-color: #f7f7f7;
+}
+.triangle{
+    border-top:30px solid white; /* Tam giác phía trên được đổ màu */
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-light .navbar-toggler {
+        border: unset;
+    }
+    .navbar-toggler:focus {
+       outline: unset;
+    }
+    .navbar-toggler {
+        padding: 0;
+    }
+    .navbar-brand{
+        margin-left: 10px;
+    }
+  }
